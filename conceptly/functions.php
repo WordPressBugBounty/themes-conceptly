@@ -5,7 +5,7 @@ function conceptly_setup() {
 	/**
 	 * Define Theme Version
 	 */
-	define( 'CONCEPTLY_THEME_VERSION', '14.2' );
+	define( 'CONCEPTLY_THEME_VERSION', '14.3' );
 	
 	/*
 	 * Make theme available for translation.
@@ -59,6 +59,7 @@ function conceptly_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+	require( get_template_directory() . '/inc/customize/customizer_recommended_plugin.php');
 }
 endif;
 add_action( 'after_setup_theme', 'conceptly_setup' );
@@ -136,7 +137,6 @@ require_once get_template_directory() . '/inc/sanitization.php';
 /**
  * Called all the Customize file.
  */
-require( get_template_directory() . '/inc/customize/customizer_recommended_plugin.php');
 require( get_template_directory() . '/inc/customize/customizer_import_data.php'); 
 require( get_template_directory() . '/inc/customize/conceptly-header-section.php');
 require( get_template_directory() . '/inc/customize/conceptly-blog.php');
