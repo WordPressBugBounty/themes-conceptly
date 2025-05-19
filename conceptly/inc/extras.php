@@ -737,12 +737,19 @@ function conceptly_deprecated_hook_admin_notice() {
                         </h2>
 
                         <p class="plugin-install-notice"><?php echo sprintf(__('Install and activate <strong>Clever Fox</strong> plugin for taking full advantage of all the features this theme has to offer.', 'conceptly')) ?></p>
+						<?php
+						$theme = wp_get_theme();
+						$theme_name = esc_html($theme->get('Name'));
+						$get_started_text = esc_html__('Get started with %s', 'conceptly');
+						?>
 
-                        <a class="conceptly-btn-get-started button button-primary button-hero conceptly-button-padding" href="#" data-name="" data-slug=""><?php esc_html_e( 'Get started with '.wp_get_theme()->get('Name'), 'conceptly' ) ?></a><span class="conceptly-push-down">
+                        <a class="conceptly-btn-get-started button button-primary button-hero conceptly-button-padding" href="#" data-name="" data-slug="">
+							<?php printf('%s', sprintf($get_started_text, $theme_name)); ?>
+						</a><span class="conceptly-push-down">
                         <?php
                             /* translators: %1$s: Anchor link start %2$s: Anchor link end */
-                            printf(
-                                'or %1$sCustomize theme%2$s</a></span>',
+                             printf(
+                                __('or %1$sCustomize theme%2$s</a></span>','conceptly'),
                                 '<a target="_blank" href="' . esc_url( admin_url( 'customize.php' ) ) . '">',
                                 '</a>'
                             );
