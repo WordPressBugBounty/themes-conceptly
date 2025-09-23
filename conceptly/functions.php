@@ -5,7 +5,7 @@ function conceptly_setup() {
 	/**
 	 * Define Theme Version
 	 */
-	define( 'CONCEPTLY_THEME_VERSION', '17.9' );
+	define( 'CONCEPTLY_THEME_VERSION', '18.0' );
 	
 	/*
 	 * Make theme available for translation.
