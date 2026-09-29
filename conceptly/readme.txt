@@ -2,10 +2,10 @@
 
 Contributors: Nayrathemes
 Requires at least: 6.8
-Tested up to: 7.0.1
+Tested up to: 7.1.2
 Requires PHP: 7.4
-Stable tag: 23.2
-Version: 23.2
+Stable tag: 23.3
+Version: 23.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu,  custom-logo, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, blog, photography, portfolio, editor-style, grid-layout
@@ -103,6 +103,9 @@ All other Images have been used in images folder, Created by Nayra Themes. Also 
 
 
 == Changelog ==
+
+= 23.3 =
+* Tested WP Compatibility 7.1.2
 
 = 23.2 =
 * Block Style Improvement
